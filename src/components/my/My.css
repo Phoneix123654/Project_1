@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Eagle+Lake&family=Love+Ya+Like+A+Sister&family=Shalimar&display=swap');
+
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1000px;
+    height: 500px;
+    background: white;
+    box-shadow: 6px 6px 0 0 rgb(234, 137, 137);
+    gap: 2rem;
+}
+
+.container1{
+    min-height: 400px;
+    width: 400px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.item:nth-child(1),
+.item:nth-child(2),
+.item:nth-child(4),
+.item:nth-child(5) {
+  flex-grow: 1;
+  height: 120px;
+}
+
+.item:nth-child(3) {
+  width: 100%;
+}
+
+.container2{
+    min-height: 400px;
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.may-img{
+    width: 400px;
+    height: 400px;
+}
+
+.con2-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+
+.con2-text h2{
+    font-family: "Shalimar", cursive;
+    font-weight: 700;
+    color: brown;
+    font-size: 3.5rem;
+    letter-spacing: 3px;
+}
+
+.con2-para{
+    width: 350px;
+    height: 150px;
+    font-family: "Love Ya Like A Sister", cursive;
+    color: black;
+    font-family: 600;
+    letter-spacing: 0.9px;
+    font-weight: 500;
+}
+
+.con2-foot{
+    font-weight: 700;
+    display: flex;
+    justify-content: flex-end;
+    width: 90%;
+}
+
+.btn{
+    padding: 10px;
+    width: 100px;
+    font-family: cursive;
+    background-color: rgb(234, 137, 137);
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 2px solid black;
+    transition: 0.2s all ease-in-out;
+}
+
+.btn:hover{
+    letter-spacing: 1px;
+    width: 110px;
+    color: rgb(111, 81, 46);
+}
+
+.img-1{
+    width: 186px;
+    height: 120px;
+    border: 4px solid brown;
+    border-radius: 5px;
+}
+
+.img-2{
+    width: 194px;
+    height: 120px;
+    border: 4px solid brown;
+    border-radius: 5px;
+}
+.img-3{
+    width: 399px;
+    height: 120px;
+    border: 4px solid brown;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+.item {
+    position: relative; 
+}
+
+.item:hover::after {
+    content: attr(data-message);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.9); 
+    color: black;
+    padding: 5px 10px; 
+    border-radius: 5px;
+    font-family: "Love Ya Like A Sister", cursive;
+    font-size: 0.8rem; 
+    font-weight: 500;
+    text-align: center;
+    white-space: wrap;
+    z-index: 10;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+    max-width: 90%; 
+    word-wrap: break-word; 
+}
+
+
+.item img {
+    position: relative;
+    z-index: 1;
+}
+
+.hearts {
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    z-index: 1000;
+}
+
+.left-hearts {
+    left: 20px;
+}
+
+.right-hearts {
+    right: 20px;
+}
+
+.heart {
+    font-size: 2rem;
+    color: red;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+    display: inline-block; /* Ensure the hearts can rotate */
+    transform-style: preserve-3d; /* Enable 3D transformations */
+}
+
+@keyframes rotate3D {
+    0% {
+        transform: rotateY(0deg);
+    }
+    100% {
+        transform: rotateY(360deg);
+    }
+}
+
+.rotate {
+    animation: rotate3D 2s linear infinite; /* Rotate the hearts infinitely in 3D */
+}
