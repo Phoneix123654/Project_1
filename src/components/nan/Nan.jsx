@@ -35,26 +35,26 @@ const Nan = () => {
         <span className="heart">❤️</span>
       </div>
 
-      <div className="about">
+      <div className="aboutN">
         <div className="container1">
           <div className="item" data-message="Thanks">
-            <img src={assets.n1} alt="" className='img-1' />
+            <img src={assets.n1} alt="" className='imgN-1' />
           </div>
           <div className="item" data-message="For">
-            <img src={assets.n2} alt="" className='img-2' />
+            <img src={assets.n2} alt="" className='imgN-2' />
           </div>
           <div className="item" data-message="Being">
-            <img src={assets.n3} alt="" className='img-3' />
+            <img src={assets.n3} alt="" className='imgN-3' />
           </div>
           <div className="item" data-message="My">
-            <img src={assets.n2} alt="" className='img-1' />
+            <img src={assets.n2} alt="" className='imgN-1' />
           </div>
           <div className="item" data-message="Friend.">
-            <img src={assets.n1} alt="" className='img-2' />
+            <img src={assets.n1} alt="" className='imgN-2' />
           </div>
         </div>
         <div className="container2">
-          <div className="con2-text">
+          <div className="con2-textN">
             <h2>HAPPY BIRTHDAY</h2>
           </div>
           <div className="con2-para">
@@ -63,8 +63,8 @@ const Nan = () => {
           <div className="con2-foot">
             <p>-By: Rajdeep Singh</p>
           </div>
-          <div className="btn1">
-            <button className="btn" onClick={reload}>Thank You</button>
+          <div className="btn1N">
+            <button className="btnN" onClick={reload}>Thank You</button>
           </div>
         </div>
       </div>

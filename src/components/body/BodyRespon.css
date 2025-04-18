@@ -1,0 +1,106 @@
+@media (max-width: 1300px) {
+    .container {
+        width: 1000px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .container {
+        width: 800px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .slider {
+        width: 300px;
+        height: 300px;
+    }
+    .slider img {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+@media (max-width: 900px) {
+    .container {
+        width: 600px;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 250px;
+    }
+
+    .slider {
+        width: 300px;
+        height: 300px;
+        margin-top: 30px;
+    }
+    .slider img {
+        width: 300px;
+        height: 300px;
+    }
+    
+    .login-box{
+        width: 350px;
+        height: 350px;
+    }
+}
+
+@media (max-width: 700px) {
+    .container {
+        width: 500px;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 250px;
+    }
+
+    .slider {
+        width: 250px;
+        height: 250px;
+        margin-top: 30px;
+    }
+    .slider img {
+        width: 250px;
+        height: 250px;
+    }
+    
+    .login-box{
+        width: 300px;
+        height: 300px;
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 300px;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 150px;
+    }
+
+    .slider {
+        width: 200px;
+        height: 200px;
+        margin-top: 30px;
+    }
+    .slider img {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .login-box{
+        width: 300px;
+        height: 300px;
+    }
+
+    .form .input-span {
+        width: 80%;
+      }
+
+    .label {
+        font-size: 14px;
+    }
+    
+    .form .submit {
+        width: 80%;
+    }
+}

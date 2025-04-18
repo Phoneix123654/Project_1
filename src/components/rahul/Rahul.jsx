@@ -35,26 +35,26 @@ const Rahul = () => {
         <span className="heart">❤️</span>
       </div>
 
-      <div className="about">
+      <div className="aboutV">
         <div className="container1">
           <div className="item" data-message="God">
-            <img src={assets.v3} alt="" className='img-1' />
+            <img src={assets.v3} alt="" className='imgV-1' />
           </div>
           <div className="item" data-message="May">
-            <img src={assets.v4} alt="" className='img-2' />
+            <img src={assets.v4} alt="" className='imgV-2' />
           </div>
           <div className="item" data-message="Bless">
-            <img src={assets.v2} alt="" className='img-3' />
+            <img src={assets.v2} alt="" className='imgV-3' />
           </div>
           <div className="item" data-message="You">
-            <img src={assets.v4} alt="" className='img-1' />
+            <img src={assets.v4} alt="" className='imgV-1' />
           </div>
           <div className="item" data-message="Buddy.">
-            <img src={assets.v5} alt="" className='img-2' />
+            <img src={assets.v5} alt="" className='imgV-2' />
           </div>
         </div>
         <div className="container2">
-          <div className="con2-text">
+          <div className="con2-textV">
             <h2>HAPPY BIRTHDAY</h2>
           </div>
           <div className="con2-para">
@@ -65,8 +65,8 @@ const Rahul = () => {
           <div className="con2-foot">
             <p>-By: Rajdeep Singh</p>
           </div>
-          <div className="btn1">
-            <button className="btn" onClick={reload}>Thank You</button>
+          <div className="btn1V">
+            <button className="btnV" onClick={reload}>Thank You</button>
           </div>
         </div>
       </div>

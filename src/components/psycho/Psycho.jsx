@@ -35,26 +35,26 @@ const Psycho = () => {
         <span className="heart">❤️</span>
       </div>
 
-      <div className="about">
+      <div className="aboutP">
         <div className="container1">
-          <div className="item" data-message="In">
-            <img src={assets.k1} alt="" className='img-1' />
+          <div className="itemP" data-message="I">
+            <img src={assets.k1} alt="" className='imgP-1' />
           </div>
-          <div className="item" data-message="The">
-            <img src={assets.k2} alt="" className='img-2' />
+          <div className="itemP" data-message="Hate">
+            <img src={assets.k2} alt="" className='imgP-2' />
           </div>
-          <div className="item" data-message="End">
-            <img src={assets.k5} alt="" className='img-3' />
+          <div className="itemP" data-message="Life">
+            <img src={assets.k5} alt="" className='imgP-3' />
           </div>
-          <div className="item" data-message="Its">
-            <img src={assets.k3} alt="" className='img-1' />
+          <div className="itemP" data-message="More than">
+            <img src={assets.k4} alt="" className='imgP-1' />
           </div>
-          <div className="item" data-message="My Fault.">
-            <img src={assets.k4} alt="" className='img-2' />
+          <div className="itemP" data-message="Anything.">
+            <img src={assets.k3} alt="" className='imgP-2' />
           </div>
         </div>
         <div className="container2">
-          <div className="con2-text">
+          <div className="con2-textP">
             <h2>HAPPY BIRTHDAY</h2>
           </div>
           <div className="con2-para">
@@ -63,8 +63,8 @@ const Psycho = () => {
           <div className="con2-foot">
             <p>-By: Rajdeep Singh</p>
           </div>
-          <div className="btn1">
-            <button className="btn" onClick={reload}>Thank You</button>
+          <div className="btn1P">
+            <button className="btnP" onClick={reload}>Thank You</button>
           </div>
         </div>
       </div>

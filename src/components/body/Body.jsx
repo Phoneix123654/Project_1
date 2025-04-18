@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import './Body.css'
+import './BodyRespon.css'
 import { assets } from '../../assets/assets'
 import { useNavigate } from 'react-router-dom';
 
@@ -67,12 +68,12 @@ const Body = () => {
         </form>
       </div>
       {/* Panda area */}
-      <div className="panda-gif left">
+      {/* <div className="panda-gif left">
         <img src={assets.panda} alt="panda-error" />
       </div>
       <div className="panda-gif right">
         <img src={assets.panda} alt="panda-error" />
-      </div>
+      </div> */}
     </div>
   );
 }
