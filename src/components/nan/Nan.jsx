@@ -47,10 +47,10 @@ const Nan = () => {
             <img src={assets.n3} alt="" className='imgN-3' />
           </div>
           <div className="item" data-message="My">
-            <img src={assets.n2} alt="" className='imgN-1' />
+            <img src={assets.n4} alt="" className='imgN-1' />
           </div>
           <div className="item" data-message="Friend.">
-            <img src={assets.n1} alt="" className='imgN-2' />
+            <img src={assets.n5} alt="" className='imgN-2' />
           </div>
         </div>
         <div className="container2">

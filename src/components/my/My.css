@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Eagle+Lake&family=Love+Ya+Like+A+Sister&family=Shalimar&display=swap');
 
-.about{
+.about {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -11,48 +11,24 @@
     gap: 2rem;
 }
 
-.container1{
-    min-height: 400px;
-    width: 400px;
+.contMy1 {
     display: flex;
-    gap: 20px;
     flex-wrap: wrap;
 }
-.item:nth-child(1),
-.item:nth-child(2),
-.item:nth-child(4),
-.item:nth-child(5) {
-  flex-grow: 1;
-  height: 120px;
-}
 
-.item:nth-child(3) {
-  width: 100%;
-}
 
-.container2{
-    min-height: 400px;
-    width: 500px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.may-img{
+.may-img {
     width: 400px;
     height: 400px;
 }
 
-.con2-text{
+.con2-text {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 30px;
 }
 
-.con2-text h2{
+.con2-text h2 {
     font-family: "Shalimar", cursive;
     font-weight: 700;
     color: brown;
@@ -60,7 +36,7 @@
     letter-spacing: 3px;
 }
 
-.con2-para{
+.conMy2-para {
     width: 350px;
     height: 150px;
     font-family: "Love Ya Like A Sister", cursive;
@@ -70,14 +46,14 @@
     font-weight: 500;
 }
 
-.con2-foot{
+.conMy2-foot {
     font-weight: 700;
     display: flex;
     justify-content: flex-end;
     width: 90%;
 }
 
-.btn{
+.btn {
     padding: 10px;
     width: 100px;
     font-family: cursive;
@@ -89,26 +65,27 @@
     transition: 0.2s all ease-in-out;
 }
 
-.btn:hover{
+.btn:hover {
     letter-spacing: 1px;
     width: 110px;
     color: rgb(111, 81, 46);
 }
 
-.img-1{
+.img-1 {
     width: 186px;
     height: 120px;
     border: 4px solid brown;
     border-radius: 5px;
 }
 
-.img-2{
+.img-2 {
     width: 194px;
     height: 120px;
     border: 4px solid brown;
     border-radius: 5px;
 }
-.img-3{
+
+.img-3 {
     width: 399px;
     height: 120px;
     border: 4px solid brown;
@@ -116,77 +93,430 @@
 }
 
 
-
-
-
-
-.item {
-    position: relative; 
+.itemRow1, .itemRow2, .itemRow3{
+    position: relative;
 }
 
-.item:hover::after {
+.itemRow1:hover::after {
     content: attr(data-message);
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: rgba(255, 255, 255, 0.9); 
+    background-color: rgba(255, 255, 255, 0.9);
     color: black;
-    padding: 5px 10px; 
+    padding: 5px 10px;
     border-radius: 5px;
     font-family: "Love Ya Like A Sister", cursive;
-    font-size: 0.8rem; 
+    font-size: 0.8rem;
     font-weight: 500;
     text-align: center;
     white-space: wrap;
     z-index: 10;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
-    max-width: 90%; 
-    word-wrap: break-word; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    max-width: 90%;
+    word-wrap: break-word;
+}
+.itemRow2:hover::after {
+    content: attr(data-message);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.9);
+    color: black;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-family: "Love Ya Like A Sister", cursive;
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-align: center;
+    white-space: wrap;
+    z-index: 10;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    max-width: 90%;
+    word-wrap: break-word;
+}
+.itemRow3:hover::after {
+    content: attr(data-message);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.9);
+    color: black;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-family: "Love Ya Like A Sister", cursive;
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-align: center;
+    white-space: wrap;
+    z-index: 10;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    max-width: 90%;
+    word-wrap: break-word;
 }
 
-
-.item img {
+.itemRow1 img, .imgRow1 img, .itemRow3 img{
     position: relative;
     z-index: 1;
 }
 
-.hearts {
-    position: fixed;
-    top: 0;
-    height: 100vh;
+.imgRow1, .imgRow3{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    width: 100%;
+    gap: 10px;
     justify-content: space-around;
-    z-index: 1000;
+}
+.imgRow2{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.left-hearts {
-    left: 20px;
+/* trial */
+.heart-cursor {
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    background: url('https://cdn-icons-png.flaticon.com/512/833/833472.png') no-repeat center center/contain;
+    pointer-events: none;
+    animation: floatHeart 1s ease-out forwards;
+    z-index: 9999;
 }
 
-.right-hearts {
-    right: 20px;
-}
-
-.heart {
-    font-size: 2rem;
-    color: red;
-    opacity: 1;
-    transition: opacity 0.5s ease-in-out;
-    display: inline-block; /* Ensure the hearts can rotate */
-    transform-style: preserve-3d; /* Enable 3D transformations */
-}
-
-@keyframes rotate3D {
+@keyframes floatHeart {
     0% {
-        transform: rotateY(0deg);
+        opacity: 1;
+        transform: translateY(0) scale(1);
     }
     100% {
-        transform: rotateY(360deg);
+        opacity: 0;
+        transform: translateY(-50px) scale(1.5);
     }
 }
 
-.rotate {
-    animation: rotate3D 2s linear infinite; /* Rotate the hearts infinitely in 3D */
+
+.heart-rain {
+    position: fixed;
+    top: -30px;
+    width: 25px;
+    height: 25px;
+    background: url('https://cdn-icons-png.flaticon.com/512/833/833472.png') no-repeat center center/contain;
+    pointer-events: none;
+    animation: fallHeart 4s linear forwards;
+    z-index: 9999;
+    opacity: 0.8;
+  }
+  
+  @keyframes fallHeart {
+    0% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(100vh);
+      opacity: 0;
+    }
+  }
+  
+/* for responsive no changes here */
+
+@media (max-width: 1500px){
+    .about{
+        height: 590px;
+        gap: 0;
+    }
+    .imgRow1{
+        margin-bottom: 15px;
+    }
+    .imgRow2{
+        margin-bottom: 15px;
+    }
+    .img-3{
+        height: 160px;
+    }
+    .img-1,.img-2{
+        height: 140px;
+    }
+    .contMy1{
+        width: 600px;
+    }
+    .con2-text h2{
+        font-size: 3rem;
+    }
+    .contMy2{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .btn1{
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 1400px){
+    .about{
+        height: 590px;
+        gap: 0;
+    }
+    .imgRow1{
+        margin-bottom: 15px;
+    }
+    .imgRow2{
+        margin-bottom: 15px;
+    }
+    .img-3{
+        height: 160px;
+    }
+    .img-1,.img-2{
+        height: 140px;
+    }
+    .contMy1{
+        width: 600px;
+    }
+    .con2-text h2{
+        font-size: 3rem;
+    }
+    .contMy2{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .btn1{
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 1300px){
+    .about{
+        height: 590px;
+        gap: 0;
+    }
+    .imgRow1{
+        margin-bottom: 15px;
+    }
+    .imgRow2{
+        margin-bottom: 15px;
+    }
+    .img-3{
+        height: 160px;
+    }
+    .img-1,.img-2{
+        height: 140px;
+    }
+    .contMy1{
+        width: 600px;
+    }
+    .con2-text h2{
+        font-size: 3rem;
+    }
+    .contMy2{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .btn1{
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 1200px){
+    .about{
+        height: 590px;
+        gap: 0;
+    }
+    .imgRow1{
+        margin-bottom: 15px;
+    }
+    .imgRow2{
+        margin-bottom: 15px;
+    }
+    .img-3{
+        height: 160px;
+    }
+    .img-1,.img-2{
+        height: 140px;
+    }
+    .contMy1{
+        width: 600px;
+    }
+    .con2-text h2{
+        font-size: 3rem;
+    }
+    .contMy2{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .btn1{
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 1100px){
+    .about{
+        width: 900px;
+    }
+    .imgRow1{
+        margin-bottom: 10px;
+    }
+    .imgRow2{
+        margin-bottom: 10px;
+    }
+    .contMy2{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .btn1{
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 900px) {
+    .about{
+        width: 680px;
+        height: 790px;
+        gap: 0;
+        flex-direction: column;
+    }
+    .imgRow1{
+        margin-bottom: 10px;
+    }
+    .imgRow2{
+        margin-bottom: 10px;
+    }
+    .contMy2{
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .con2-text{
+        margin-top: 10px;
+    }
+    .btn1{
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 700px) {
+    .about {
+        width: 500px;
+        height: 780px;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        padding: 20px;
+        margin-top: 80px;
+        margin-bottom: 20px;
+        gap: 0px;
+    }
+
+    .img-1 {
+        width: 150px;
+        height: 100px;
+    }
+
+    .img-2 {
+        width: 150px;
+        height: 100px;
+        margin-left: 20px;
+    }
+
+    .img-3 {
+        height: 150px;
+    }
+
+    .contMy1{
+        gap: 15px;
+    }
+
+    .contMy2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .con2-text h2 {
+        font-size: 3.3rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .about {
+        width: 340px;
+        height: 760px;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        padding: 20px;
+        margin-top: 80px;
+        margin-bottom: 20px;
+        gap: 0px;
+    }
+
+    .contMy1 {
+        width: 315px;
+        height: 500px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .img-1 {
+        width: 130px;
+        height: 100px;
+    }
+
+    .img-2 {
+        width: 150px;
+        height: 100px;
+    }
+
+    .img-3 {
+        width: 300px;
+        height: 130px;
+    }
+
+    .contMy2 {
+        width: 400px;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .con2-text {
+        padding-bottom: 10px;
+    }
+
+    .con2-text h2 {
+        font-size: 2.2rem;
+    }
+
+    .booody {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .conMy2-para {
+        width: 290px;
+    }
+
+    .conMy2-foot {
+        width: 78%;
+    }
+
+    .btn1 {
+        margin-top: 30px;
+    }
 }

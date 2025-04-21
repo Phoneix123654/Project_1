@@ -24,6 +24,8 @@ import r5 from './r5.jpg';
 import n1 from './n1.jpg';
 import n2 from './n2.jpg';
 import n3 from './n3.jpg';
+import n4 from './n4.jpg'
+import n5 from './n5.jpg'
 // image of vr
 import v1 from './v2.jpg';
 import v2 from './v3.jpg';
@@ -51,6 +53,8 @@ export const assets = {
   n1,
   n2,
   n3,
+  n4,
+  n5,
   v1,
   v2,
   v3,
