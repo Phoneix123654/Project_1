@@ -642,7 +642,7 @@
 @media (max-width: 600px) {
     .about {
         width: 340px;
-        height: 760px;
+        height: 790px;
         display: flex;
         justify-content: flex-start;
         flex-direction: column;
@@ -692,6 +692,12 @@
 
     .con2-text h2 {
         font-size: 2.2rem;
+    }
+    .conMy2-para{
+        margin-bottom: 15px;
+    }
+    .conMy2-foot{
+        margin-top: 45px;
     }
 
     .booody {
