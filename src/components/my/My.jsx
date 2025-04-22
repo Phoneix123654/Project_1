@@ -6,17 +6,7 @@ import { useEffect } from 'react';
 
 const My = () => {
   const navigate = useNavigate();
-  // const reload = () => {
-  //   const hearts = document.querySelectorAll('.heart');
-
-  //   hearts.forEach(heart => {
-  //     heart.classList.add('rotate');
-  //   });
-
-  //   setTimeout(() => {
-  //     navigate('/');
-  //   }, 6000);
-  // };
+  
   const reload = () => {
     const interval = setInterval(() => {
       const heart = document.createElement('div');
@@ -37,6 +27,9 @@ const My = () => {
   
 
   useEffect(() => {
+    const audio = new Audio(assets.kanMp3);
+    audio.play();
+  
     const createHeart = (e) => {
       const heart = document.createElement('div');
       heart.className = 'heart-cursor';
@@ -53,9 +46,12 @@ const My = () => {
   
     return () => {
       window.removeEventListener('mousemove', createHeart);
+      audio.pause();
+      audio.currentTime = 0;
     };
   }, []);
 
+  
   return (
     <div className='booody'>
 

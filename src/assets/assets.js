@@ -35,6 +35,9 @@ import v5 from './v5.jpg';
 
 // panda
 import panda from './panda-6258.gif'
+// mp3 track
+import kanMp3 from './k_mp3.mp3'
+
 export const assets = {
   feb1,
   feb2,
@@ -60,5 +63,6 @@ export const assets = {
   v3,
   v4,
   v5,
-  panda
+  panda,
+  kanMp3
 };
